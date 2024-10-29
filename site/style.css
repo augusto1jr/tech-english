@@ -172,6 +172,18 @@ aside ul{
     columns: 2;
 }
 
+@media (min-width: 400px){  
+    aside ul{
+      columns: 1;
+    }
+  }
+  
+  @media (min-width: 750px){  
+    aside ul{
+      columns: 2;
+    }
+  }
+
 aside audio::-webkit-media-controls-panel {
     background-color: #87abd5c0;
 }
