@@ -156,14 +156,20 @@ aside{
 aside h2{
     background-color: var(--cor05);
     color: white;
-    margin: -40px -40px 0px -40px;
+    margin: -40px -40px 20px -40px;
     text-indent: 10px;
     padding: 10px;
 }
 
 aside h3{
     color: var(--cor05);
-    margin-top: 20px;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+aside ul{
+    list-style-position: inside;
+    columns: 2;
 }
 
 aside audio::-webkit-media-controls-panel {
