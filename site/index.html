@@ -20,6 +20,7 @@
         <a href="#netscape">Netscape</a>
         <a href="#yahoo">Yahoo!</a>
         <a href="#future">Future</a>
+        <a href="#audiobook">AudioBook</a>
     </nav>
     <main>
         <h2 id="sputnik">Sputnik</h2>
@@ -91,8 +92,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus architecto et dolore consequuntur recusandae quidem incidunt excepturi dolorum cumque officiis deserunt laborum eveniet mollitia amet possimus, dolorem harum perferendis? Iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aut eligendi numquam beatae quidem reprehenderit illo, nostrum iure nisi voluptatibus nobis. Doloribus quidem a minima officiis maiores hic veritatis laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est reiciendis autem error sequi quas. Itaque provident alias atque modi. Laudantium impedit esse aperiam nesciunt corrupti adipisci sed, molestias sequi quisquam!</p>
 
         <aside>
-            <h2>Ouça o AudioBook</h2>
-
+            <h2 id="audiobook">Ouça o AudioBook</h2>
             <ul>
                 <h3>Capítulo 1: Sputnik</h3>
                 <audio preload="metadata" controls loop>
@@ -129,8 +129,33 @@
             </ul>
         </aside>
     </main>
+
     <footer>
         <p> Site desenvolvido por <a href="https://www.linkedin.com/in/augusto1jr/" target="_blank" rel="external">  Augusto Júnior </a></p>
     </footer>
+    
+    <button onclick="topFunction()" id="scroll_top" title="Go to top">Início</button>
+
+    <script>
+        // Get the button
+        let scroll_top = document.getElementById("scroll_top");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scroll_top.style.display = "block";
+          } else {
+            scroll_top.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 </html>
