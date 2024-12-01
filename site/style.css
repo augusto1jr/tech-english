@@ -18,7 +18,7 @@
 
 body{
     background-color: var(--cor01);
-    font-family: var(--fonte-padrao), 'Poppins', Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-padrao), 'Poppins', 'Futura', Arial, Helvetica, sans-serif;
 }
 
 header{
